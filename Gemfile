@@ -53,4 +53,4 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 4.0.0' 
 
 #Add Font-Awesome, great icons
-gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 5.0.6'
