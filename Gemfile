@@ -54,3 +54,6 @@ gem 'bootstrap', '~> 4.0.0'
 
 #Add Font-Awesome, great icons
 gem 'font-awesome-sass', '~> 5.0.6'
+
+#RubyMine Bitching?
+ gem 'tzinfo-data'
