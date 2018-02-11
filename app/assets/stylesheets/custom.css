@@ -22,7 +22,8 @@ body {
   height: 100%;
   background-image:url(https://static.pexels.com/photos/211122/pexels-photo-211122.jpeg);
   background-size:2000px;
-
+  overflow:scroll;
+    overflow-x: hidden;
 
 }
 
