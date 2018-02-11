@@ -10,7 +10,9 @@
 a:hover{
   text-decoration:none;
 }
-
+a:visited{
+  text-decoration:none;
+}
 body {
     padding-top:150px;
       /*background-size: cover;*/

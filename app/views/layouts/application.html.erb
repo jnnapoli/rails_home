@@ -35,10 +35,11 @@
                <!--The right hand navigation part-->
                <UL class="nav navbar-nav navbar-right">
                   <LI>
-                     <A HREF="https://www.github.com/jnnapoli">github</A>
+                     <A target="_blank" HREF="https://www.github.com/jnnapoli">github</A>
                   </LI>
                   <LI>
-                     <A HREF="https://www.twitter.com">resume</A>
+                     <!--<%= link_to "resume", "/initial-home-rails/" %>-->
+                     <%= link_to 'resume', root_url+'jnnapoli_resume.pdf', { target: '_blank' } %>
                   </LI>
                </UL>
             </DIV>
@@ -87,7 +88,7 @@
     </SECTION>
     <SECTION class="min" id="block2">
       <DIV class="topinnersection innersection min" style="max-width:300px">
-                  <p><LEAD>I am activiely working on the construction of the site. I have some of the ground work down and will move on to adding more soon.</LEAD></p>
+                  <p><LEAD>I am actively working on the construction of the site. I have some of the ground work down and will move on to adding more soon.</LEAD></p>
 
 
       </DIV>
@@ -95,14 +96,15 @@
     <SECTION class="min" id="block3">
       <DIV class="innersection min">
         
-        <a href="#"> <i class="fas fa-file-alt fa-5x" title="My Resume"></i></a>
+        <a href="jnnapoli_resume.pdf" target="_blank"> <i class="fas fa-file-alt fa-5x" title="My Resume"></i></a>
         
       </DIV>
     </SECTION>
     <SECTION class="min" id="block4">
       <DIV class="innersection min">
-        
-        <a target="_blank" href="https:www.github.com\jnnapoli" title="My GitHub"><i class="fab fa-github fa-5x"></i></a> 
+                             <A target="_blank" HREF="https://www.github.com/jnnapoli" title="My GitHub"><i class="fab fa-github fa-5x"></i></A>
+
+        <!--<a target="_blank" href="https:www.github.com\jnnapoli" title="My GitHub"><i class="fab fa-github fa-5x"></i></a> -->
 
       </DIV>
     </SECTION>
