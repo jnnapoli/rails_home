@@ -1,3 +1,19 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
 
 .space-out{
   letter-spacing:20px;
@@ -22,11 +38,7 @@ html{
 
 body {
     padding-top: 150px;
-background-color: #7ba969;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%234c8b3d' fill-opacity='0.88' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-image:url(https://image.freepik.com/free-vector/small-green-squares-background_1113-14.jpg);
     background-size: cover;
     height: 100%;
     overflow: scroll;
@@ -50,16 +62,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 main
 {
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
-	flex-flow : row wrap;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	    -ms-flex-flow : row wrap;
+	        flex-flow : row wrap;
 }
 .min
 {
 	min-height : 150px;
 	min-width : 150px;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
 	  display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   
   padding:30px;
   
@@ -82,7 +105,8 @@ div.innersection {
 div.topinnersection {
 
   background-color: white;
-  box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.2);
+  -webkit-box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.2);
+          box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.2);
   border-color: lightgrey;
   border-width: 1px;
   border-style: solid;
@@ -106,43 +130,55 @@ div.innersection:hover {
 #block1
 {
 	
-	flex-basis : 60%;
+	-ms-flex-preferred-size : 60%;
+	
+	    flex-basis : 60%;
 }
 
 #block2
 {
 	
-	flex-basis : 40%;
+	-ms-flex-preferred-size : 40%;
+	
+	    flex-basis : 40%;
 }
 
 #block3
 {
 	
-	flex-basis : 33.33%;
+	-ms-flex-preferred-size : 33.33%;
+	
+	    flex-basis : 33.33%;
 	font-size: 50px;
 }
 
 #block4
 {
 	
-	flex-basis : 33.33%;
+	-ms-flex-preferred-size : 33.33%;
+	
+	    flex-basis : 33.33%;
 	font-size: 50px;
 }
 
 #block5
 {
 	
-	flex-basis : 33.33%;
+	-ms-flex-preferred-size : 33.33%;
+	
+	    flex-basis : 33.33%;
 	font-size: 50px;
 }
 
 @media (max-width : 800px)
 {
 	#block1{
-		flex-basis : 100%;
+		-ms-flex-preferred-size : 100%;
+		    flex-basis : 100%;
 	}
 	#block2, #block3, #block4, #block5{
-		flex-basis : 50%;
+		-ms-flex-preferred-size : 50%;
+		    flex-basis : 50%;
 	}
 	#block3, #block4, #block5{
 		font-size : 40px;
@@ -159,7 +195,8 @@ div.innersection:hover {
     }
 	#block1,#block2,#block3,#block4,#block5
 	{
-		flex-basis : 100%;
+		-ms-flex-preferred-size : 100%;
+		    flex-basis : 100%;
 	}
 	#block3, #block4, #block5{
 		font-size: 60px;
