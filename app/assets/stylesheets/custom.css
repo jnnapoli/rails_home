@@ -66,29 +66,29 @@ main {
     align-items: center;
     padding:30px;
 }
+
+div.iconsection{
+    text-shadow: 4px 6px 3px rgba(3, 46, 92, 0.3);
+    margin: 10px;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+
+}
+
 div.innersection {
     margin: 10px;
-    /*background-color: white;
-    */
-    /*box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.2);
-    */
-    /*border-color: lightgrey;
-    */
-    /*border-width: 1px;
-    */
-    /*border-style: solid;
-    */
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
 }
 div.topinnersection {
     background-color: white;
-    box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.2);
-    border-color: lightgrey;
+    box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.3);
+    border-color: white;
     border-width: 1px;
     border-style: solid;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 .max1{
     padding-left: 40px !important;
