@@ -29,31 +29,9 @@ body {
     height: 100%;
     overflow: scroll;
 }
-/*body {
-    */
-/*padding-top:150px;
-*/
-/*!*background-size: cover;
-*!*/
-/*background-attachment:fixed;
-*/
-/*margin: 0;
-*/
-/*width: 100%;
-*/
-/*height: 100%;
-*/
-/*background-image:url(https://static.pexels.com/photos/211122/pexels-photo-211122.jpeg);
-*/
-/*background-size:2000px, cover;
-*/
-/*overflow:scroll;
-*/
-/*overflow-x: hidden;
-*/
-/*
-}
-*/
+
+
+
 main {
     display : flex;
     flex-flow : row wrap;
@@ -69,11 +47,13 @@ main {
 
 div.iconsection{
     text-shadow: 4px 6px 3px rgba(3, 46, 92, 0.3);
-    margin: 10px;
+    /*margin: 10px;*/
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
 
+
 }
+
 
 div.innersection {
     margin: 10px;
@@ -90,17 +70,19 @@ div.topinnersection {
     padding-right: 20px;
 
 }
+
+div.iconsection:hover{
+    font-size:110%;
+    padding-top:0;
+}
 .max1{
     padding-left: 40px !important;
     padding-right: 40px !important;
 }
-div.innersection:hover {
-    /*box-shadow: 2px 3px 3px 2px rgba(3, 46, 92, 0.7);
-    */
-    /*border-color: grey;
-    */
-    font-size-adjust: 1.2;
+#emptyblock{
+    flex-basis: 100%;
 }
+
 #block1 {
     flex-basis : 60%;
 }
@@ -119,7 +101,13 @@ div.innersection:hover {
     flex-basis : 33.33%;
     font-size: 50px;
 }
-@media (max-width : 800px) {
+@media (max-width : 1000px) {
+    div.iconsection:hover{
+        font-size:100%;
+        padding-top:30px;
+    }
+
+
     #block1{
         flex-basis : 100%;
     }
@@ -131,6 +119,12 @@ div.innersection:hover {
     }
 }
 @media (max-width : 600px) {
+    div.iconsection:hover{
+        font-size:100%;
+        padding-top:30px;
+    }
+
+
     .max1{
         padding-left: 20px !important;
         padding-right: 20px !important;
