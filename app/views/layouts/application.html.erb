@@ -1,115 +1,130 @@
-<!DOCTYPE html><HTML>
-   <HEAD>
-     <TITLE>Joey Napoli</TITLE>
-      <META name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<!doctype html>
+<html>
+<head>
+  <title>Joey Napoli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-     <%= favicon_link_tag '/favicon.ico' %>
+  <%= favicon_link_tag '/favicon.ico' %>
 
 
-     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic' rel='stylesheet' type='text/css'>
-   </HEAD>
-   <BODY>
-      <NAV class="navbar navbar-default navbar-fixed-top">
-         <DIV class="container-fluid">
-            <DIV class="navbar-header">
-              <A class="navbar-brand" HREF="#"><b>jnnapoli</b></A>
-               <BUTTON type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <SPAN class="icon-bar"></SPAN>
-               <SPAN class="icon-bar"></SPAN>
-               <SPAN class="icon-bar"></SPAN>
-               </BUTTON>
-            </DIV>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
-            <!-- These are the navigation links wrapped in a collapse DIV-->
-            <DIV class="collapse navbar-collapse" id="myNavbar">
+</head>
 
+<body style="font-family:'Source Sans Pro'">
 
-               <!--The right hand navigation part-->
-               <UL class="nav navbar-nav navbar-right">
-                  <LI>
+<!--navigation-->
 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid navbar-res-width">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Joey Napoli</b></a>
 
-                    <a href="jnnapoli_resume.pdf" target="_blank"  title="My Resume">resume</a>
-                  </LI>
+      <!--hamburger button navigation-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-                  <LI>
-
-                    <A target="_blank" HREF="https://www.github.com/jnnapoli" title="My GitHub">github</A>
-                  </LI>
-
-                 <li>
-
-                   <a href="mailto:joey@jnnapoli.com" title="Contact Me">contact</a>
-                 </li>
-
-               </UL>
-            </DIV>
-         </DIV>
-      </NAV>
-      
-      <!-- Main Content -->
-      <DIV class="container">
-         <DIV class="container-fluid">
-           
-
-            
-
-      <!-- ACTUAL MAIN BOXES -->
-      <MAIN>
-
-    <SECTION class="min" id="block1">
-      <DIV class="topinnersection innersection min max1">
-        <p><h1 class="text-center"><b>It is a work in progress, my dudes!</b></h1></p>
-      </DIV>
-        
-        
-    </SECTION>
-
-    <SECTION class="min" id="block2">
-      <DIV class="topinnersection innersection min" style="max-width:300px">
-                  <p><LEAD>I am actively working on the construction of the site. I have some of the ground work down and will move on to adding more soon.</LEAD>
-                    </br></br><b>
-                    Please feel free to access the resources below. </p></b>
+    </div>
 
 
-      </DIV>
-    </SECTION>
+    <!-- these are the navigation links wrapped in a collapsible div-->
+    <div class="collapse navbar-collapse" id="mynavbar">
+
+      <!--the right hand navigation part-->
+      <ul class="nav navbar-nav navbar-right">
+
+        <li>
+          <a href="jnnapoli_resume.pdf" target="_blank" title="My Resume">resume</a>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://www.github.com/jnnapoli" title="My GitHub">github</a>
+        </li>
+
+        <li>
+          <a href="mailto:joey@jnnapoli.com" title="Contact Me">contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- main content -->
+<div class="container">
+  <div class="container-fluid">
 
 
-
-    <SECTION class="min" id="block3">
-      <DIV class="iconsection min">
-        
-        <a href="jnnapoli_resume.pdf" target="_blank"> <i class="fas fa-file-alt fa-5x" title="My Resume"></i></a>
-        
-      </DIV>
-    </SECTION>
-    <SECTION class="min" id="block4">
-      <DIV class="iconsection min">
-                             <A target="_blank" HREF="https://www.github.com/jnnapoli" title="My GitHub"><i class="fab fa-github fa-5x"></i></A>
+    <!--This is where I will yield so actual routed pages load-->
 
 
-      </DIV>
-    </SECTION>
-    <SECTION class="min" id="block5">
-      <DIV class="iconsection min">
-        
-        <a href="mailto:joey@jnnapoli.com"><i class="fas fa-envelope fa-5x" title="Contact Me"></i></a>
+    <!-- actual main boxes -->
+    <main>
 
-      </DIV>
-    </SECTION>
+      <section class="min" id="block1">
+
+        <div class="topinnersection innersection min max1">
+          <p>
+          <h1 class="text-center"><b>It is a work in progress, my dudes!</b></h1></p>
+        </div>
+
+      </section>
+
+      <section class="min" id="block2">
+
+        <div class="topinnersection innersection min" style="max-width:300px">
+          <p>
+            <lead>I am actively working on the construction of the site. i have some of the ground work down and will
+              move on to adding more soon.
+            </lead>
+            </br>
+            </br>
+            </br>
+            <b>Please feel free to access the resources below.</b>
+          </p>
+
+        </div>
+      </section>
 
 
-  </MAIN>
-         </DIV>
-      </DIV>
-      <!-- ACTUAL MAIN BOXES END -->
-           <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-   </BODY>
+      <section class="min" id="block3">
+
+        <div class="iconsection min">
+          <a href="jnnapoli_resume.pdf" target="_blank"> <i class="fas fa-file-alt fa-5x" title="My Resume"></i></a>
+        </div>
+      </section>
+
+      <section class="min" id="block4">
+
+        <div class="iconsection min">
+          <a target="_blank" href="https://www.github.com/jnnapoli" title="My GitHub"><i class="fab fa-github fa-5x"></i></a>
+        </div>
+
+      </section>
+
+      <section class="min" id="block5">
+
+        <div class="iconsection min">
+          <a href="mailto:joey@jnnapoli.com"><i class="fas fa-envelope fa-5x" title="Contact Me"></i></a>
+        </div>
+
+      </section>
+
+
+    </main>
+  </div>
+</div>
+<!-- actual main boxes end -->
+<!-- jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- latest compiled javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
