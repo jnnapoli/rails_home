@@ -34,8 +34,10 @@ body {
     height: 100%;
     overflow-y: auto;
 }
+
+
 .navbar-res-width{
-    width:70%;
+    width:60%;
 }
 
 
@@ -86,10 +88,6 @@ div.iconsection:hover{
     padding-left: 40px !important;
     padding-right: 40px !important;
 }
-#emptyblock{
-    flex-basis: 100%;
-}
-
 #block1 {
     flex-basis : 60%;
 }
